@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OthersProfileAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Adapter</a>&nbsp;/&nbsp;<a href="./index.html">OthersProfileAdapter</a><br/>
+<br/>
+<h1>OthersProfileAdapter</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">OthersProfileAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-holder/index.html"><span class="identifier">Holder</span></a><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-holder/index.html">Holder</a></p>
+</td>
+<td>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">Holder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">OthersProfileAdapter</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/rootLay">rootLay</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/LinearLayout.html"><span class="identifier">LinearLayout</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/ivtransitionreject">ivtransitionreject</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/ivtransitionlike">ivtransitionlike</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$<init>(android.content.Context, kotlin.String, android.widget.LinearLayout, android.widget.RelativeLayout, android.widget.RelativeLayout, android.widget.RelativeLayout)/ivtransitioncontacted">ivtransitioncontacted</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ivtransitioncontacted.html">ivtransitioncontacted</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">ivtransitioncontacted</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ivtransitionlike.html">ivtransitionlike</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">ivtransitionlike</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="ivtransitionreject.html">ivtransitionreject</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">ivtransitionreject</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preference-manager.html">preferenceManager</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">preferenceManager</span><span class="symbol">: </span><a href="../../com.twango.me.-helper/-preference-manager/index.html"><span class="identifier">PreferenceManager</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="request-dialog.html">requestDialog</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">requestDialog</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/app/Dialog.html"><span class="identifier">Dialog</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="root-lay.html">rootLay</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">rootLay</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/LinearLayout.html"><span class="identifier">LinearLayout</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="capitalize.html">capitalize</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">capitalize</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$capitalize(kotlin.String)/input">input</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-item-id.html">getItemId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getItemId</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$getItemId(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-item-view-type.html">getItemViewType</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getItemViewType</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$getItemViewType(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$onBindViewHolder(com.twango.me.Adapter.OthersProfileAdapter.Holder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-holder/index.html"><span class="identifier">Holder</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$onBindViewHolder(com.twango.me.Adapter.OthersProfileAdapter.Holder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-holder/index.html"><span class="identifier">Holder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-item.html">removeItem</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeItem</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$removeItem(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="send_reply.html">send_reply</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">send_reply</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$send_reply(kotlin.String, kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$send_reply(kotlin.String, kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-data.html">setData</a></p>
+</td>
+<td>
+<code><span class="keyword">infix</span> <span class="keyword">fun </span><span class="identifier">setData</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$setData(java.util.ArrayList((com.twango.me.Model.ApiNewMessage)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../com.twango.me.-model/-api-new-message/index.html"><span class="identifier">ApiNewMessage</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="show-snack.html">showSnack</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">showSnack</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$showSnack(kotlin.String, kotlin.String, com.twango.me.Model.ApiReply)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$showSnack(kotlin.String, kotlin.String, com.twango.me.Model.ApiReply)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.OthersProfileAdapter$showSnack(kotlin.String, kotlin.String, com.twango.me.Model.ApiReply)/apiReply">apiReply</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-model/-api-reply/index.html"><span class="identifier">ApiReply</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

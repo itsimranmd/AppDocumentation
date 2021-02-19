@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Payments - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Helper</a>&nbsp;/&nbsp;<a href="./index.html">Payments</a><br/>
+<br/>
+<h1>Payments</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">Payments</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-interfaces/-start-payment/index.html"><span class="identifier">StartPayment</span></a><span class="symbol">, </span><span class="identifier">PaymentResultListener</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Payments</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.Payments$<init>(android.content.Context, android.app.Activity)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$<init>(android.content.Context, android.app.Activity)/activity">activity</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="close-plans-fragment.html">closePlansFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">closePlansFragment</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-error.html">onPaymentError</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onPaymentError</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.Payments$onPaymentError(kotlin.Int, kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$onPaymentError(kotlin.Int, kotlin.String)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-success.html">onPaymentSuccess</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onPaymentSuccess</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.Payments$onPaymentSuccess(kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="share-instance.html">shareInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">shareInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.twango.me.-interfaces/-start-payment/index.html"><span class="identifier">StartPayment</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-pay.html">startPay</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.Payments$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-paytm-pay.html">startPaytmPay</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">startPaytmPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.Payments$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.Payments$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-auth.html">updateAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">updateAuth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

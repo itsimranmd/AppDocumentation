@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>OpenProfileActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Acitivity</a>&nbsp;/&nbsp;<a href="./index.html">OpenProfileActivity</a><br/>
+<br/>
+<h1>OpenProfileActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">OpenProfileActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><span class="identifier">PaymentResultListener</span><span class="symbol">, </span><a href="../../com.twango.me.-interfaces/-change-main-fragments/index.html"><span class="identifier">ChangeMainFragments</span></a><span class="symbol">, </span><a href="../../com.twango.me.-interfaces/-start-payment/index.html"><span class="identifier">StartPayment</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">OpenProfileActivity</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="carousel-link.html">carouselLink</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">carouselLink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="call-immediate-back-stack.html">callImmediateBackStack</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">callImmediateBackStack</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="change-fragment.html">changeFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">changeFragment</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$changeFragment(kotlin.String)/fragmentName">fragmentName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="check-credit.html">checkCredit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkCredit</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$checkCredit(kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-error.html">onPaymentError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPaymentError</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$onPaymentError(kotlin.Int, kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$onPaymentError(kotlin.Int, kotlin.String)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-success.html">onPaymentSuccess</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPaymentSuccess</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$onPaymentSuccess(kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="send_action.html">send_action</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">send_action</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$send_action(kotlin.String, kotlin.String)/answer">answer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$send_action(kotlin.String, kotlin.String)/reponse_on_id">reponse_on_id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="send_premium_action.html">send_premium_action</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">send_premium_action</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$send_premium_action(kotlin.String, kotlin.String)/answer">answer</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$send_premium_action(kotlin.String, kotlin.String)/reponse_on_id">reponse_on_id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-pay.html">startPay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-paytm-pay.html">startPaytmPay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startPaytmPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.OpenProfileActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-auth.html">updateAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAuth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

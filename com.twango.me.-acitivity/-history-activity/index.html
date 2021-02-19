@@ -1,0 +1,210 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>HistoryActivity - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Acitivity</a>&nbsp;/&nbsp;<a href="./index.html">HistoryActivity</a><br/>
+<br/>
+<h1>HistoryActivity</h1>
+<code><span class="keyword">class </span><span class="identifier">HistoryActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><span class="identifier">PaymentResultListener</span><span class="symbol">, </span><a href="../../com.twango.me.-interfaces/-change-main-fragments/index.html"><span class="identifier">ChangeMainFragments</span></a><span class="symbol">, </span><a href="../../com.twango.me.-interfaces/-start-payment/index.html"><span class="identifier">StartPayment</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">HistoryActivity</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-a-p-l.html">APL</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">APL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-r-e-q-u-e-s-t_-i-d_-m-u-l-t-i-p-l-e_-p-e-r-m-i-s-s-i-o-n-s.html">REQUEST_ID_MULTIPLE_PERMISSIONS</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">REQUEST_ID_MULTIPLE_PERMISSIONS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-p-l.html">TPL</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">TPL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="../../com.twango.me.-adapter/-history-adapter/index.html"><span class="identifier">HistoryAdapter</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="adapter-other.html">adapterOther</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">adapterOther</span><span class="symbol">: </span><a href="../../com.twango.me.-adapter/-others-profile-adapter/index.html"><span class="identifier">OthersProfileAdapter</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="c.html">c</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">c</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="call-back-history.html">callBackHistory</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">callBackHistory</span><span class="symbol">: </span><a href="../../com.twango.me.-interfaces/-network-interface/index.html"><span class="identifier">NetworkInterface</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="code.html">code</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">code</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="credit.html">credit</a></p>
+</td>
+<td>
+<code><span class="keyword">lateinit</span> <span class="keyword">var </span><span class="identifier">credit</span><span class="symbol">: </span><a href="../../com.twango.me.-model/-api-auth/index.html"><span class="identifier">ApiAuth</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preference-manager.html">preferenceManager</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">preferenceManager</span><span class="symbol">: </span><a href="../../com.twango.me.-helper/-preference-manager/index.html"><span class="identifier">PreferenceManager</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="r.html">r</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">r</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="s.html">s</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">s</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="s-l.html">sL</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">sL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="call-immediate-back-stack.html">callImmediateBackStack</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">callImmediateBackStack</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="change-fragment.html">changeFragment</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">changeFragment</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$changeFragment(kotlin.String)/fragmentName">fragmentName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="check-credit.html">checkCredit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkCredit</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-back-pressed.html">onBackPressed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBackPressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create.html">onCreate</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreate</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onCreate(android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-error.html">onPaymentError</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPaymentError</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onPaymentError(kotlin.Int, kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onPaymentError(kotlin.Int, kotlin.String)/p1">p1</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-payment-success.html">onPaymentSuccess</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPaymentSuccess</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onPaymentSuccess(kotlin.String)/p0">p0</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-request-permissions-result.html">onRequestPermissionsResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRequestPermissionsResult</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$onRequestPermissionsResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/grantResults">grantResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-pay.html">startPay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="start-paytm-pay.html">startPaytmPay</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">startPaytmPay</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/email">email</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/number">number</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/amount">amount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/points">points</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Acitivity.HistoryActivity$startPaytmPay(kotlin.String, kotlin.String, kotlin.Int, kotlin.String, kotlin.String)/planId">planId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-auth.html">updateAuth</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAuth</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

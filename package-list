@@ -1,0 +1,29 @@
+$dokka.format:html
+$dokka.linkExtension:html
+$dokka.location:com.twango.me.Utils$loadBlurDrawable(android.widget.ImageView, android.graphics.drawable.Drawable, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-blur-drawable.html
+$dokka.location:com.twango.me.Utils$loadBlurImageGender(android.widget.ImageView, kotlin.String, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-blur-image-gender.html
+$dokka.location:com.twango.me.Utils$loadFitCenterImage(android.widget.ImageView, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-fit-center-image.html
+$dokka.location:com.twango.me.Utils$loadFitImage(android.widget.ImageView, kotlin.String)com.twango.me.-utils/android.widget.-image-view/load-fit-image.html
+$dokka.location:com.twango.me.Utils$loadImage(android.widget.ImageView, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-image.html
+$dokka.location:com.twango.me.Utils$loadImageCircular(android.widget.ImageView, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-image-circular.html
+$dokka.location:com.twango.me.Utils$loadImageGender(android.widget.ImageView, kotlin.String, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-image-gender.html
+$dokka.location:com.twango.me.Utils$loadImageRectangular(android.widget.ImageView, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-image-rectangular.html
+$dokka.location:com.twango.me.Utils$loadTodayImage(android.widget.ImageView, kotlin.String, androidx.swiperefreshlayout.widget.CircularProgressDrawable)com.twango.me.-utils/android.widget.-image-view/load-today-image.html
+$dokka.location:com.twango.me.Utils$setDesignations(android.view.View)com.twango.me.-utils/android.view.-view/set-designations.html
+$dokka.location:com.twango.me.Utils$setFamilyType(android.view.View)com.twango.me.-utils/android.view.-view/set-family-type.html
+$dokka.location:com.twango.me.Utils$setFoodChoice(android.view.View)com.twango.me.-utils/android.view.-view/set-food-choice.html
+$dokka.location:com.twango.me.Utils$setHouseType(android.view.View)com.twango.me.-utils/android.view.-view/set-house-type.html
+$dokka.location:com.twango.me.Utils$setIncome(android.view.View)com.twango.me.-utils/android.view.-view/set-income.html
+$dokka.location:com.twango.me.Utils$setLivingWithParents(android.view.View)com.twango.me.-utils/android.view.-view/set-living-with-parents.html
+$dokka.location:com.twango.me.Utils$setManglik(android.view.View)com.twango.me.-utils/android.view.-view/set-manglik.html
+$dokka.location:com.twango.me.Utils$setParentsStatus(android.view.View)com.twango.me.-utils/android.view.-view/set-parents-status.html
+com.twango.me.Acitivity
+com.twango.me.Adapter
+com.twango.me.Apis
+com.twango.me.Fragment
+com.twango.me.Helper
+com.twango.me.Interfaces
+com.twango.me.Model
+com.twango.me.Services
+com.twango.me.Utils
+com.twongo.checkin.Helper

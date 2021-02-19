@@ -1,0 +1,208 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CardStackAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Adapter</a>&nbsp;/&nbsp;<a href="./index.html">CardStackAdapter</a><br/>
+<br/>
+<h1>CardStackAdapter</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">CardStackAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-view-holder/index.html"><span class="identifier">ViewHolder</span></a><span class="symbol">&gt;</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-view-holder/index.html">ViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">inner</span> <span class="keyword">class </span><span class="identifier">ViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">CardStackAdapter</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$<init>(android.content.Context, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$<init>(android.content.Context, kotlin.Int)/creditsLeft">creditsLeft</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="auth-data.html">authData</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">authData</span><span class="symbol">: </span><a href="../../com.twango.me.-model/-api-auth/index.html"><span class="identifier">ApiAuth</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="carousel-link.html">carouselLink</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">carouselLink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-user-carousel.html">currentUserCarousel</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUserCarousel</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-user-photo.html">currentUserPhoto</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUserPhoto</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-username.html">currentUsername</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUsername</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="first_time.html">first_time</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">first_time</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="player.html">player</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">player</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/media/MediaPlayer.html"><span class="identifier">MediaPlayer</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="preference-manager.html">preferenceManager</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">preferenceManager</span><span class="symbol">: </span><a href="../../com.twango.me.-helper/-preference-manager/index.html"><span class="identifier">PreferenceManager</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="spots.html">spots</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">spots</span><span class="symbol">: </span><a href="https://developer.android.com/reference/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../../com.twango.me.-model/-today-special-table/index.html"><span class="identifier">TodaySpecialTable</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-spots.html">getSpots</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSpots</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.twango.me.-model/-today-special-table/index.html"><span class="identifier">TodaySpecialTable</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-profile.html">getUserProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getUserProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.twango.me.-model/-api-my-profile/index.html"><span class="identifier">ApiMyProfile</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-profile-interface.html">getUserProfileInterface</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getUserProfileInterface</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.twango.me.-interfaces/-user-profile-interface/index.html"><span class="identifier">UserProfileInterface</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$onBindViewHolder(com.twango.me.Adapter.CardStackAdapter.ViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-view-holder/index.html"><span class="identifier">ViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$onBindViewHolder(com.twango.me.Adapter.CardStackAdapter.ViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-view-holder/index.html"><span class="identifier">ViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="open-large-image.html">openLargeImage</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">openLargeImage</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$openLargeImage(kotlin.String)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-action-buttons-enable-status.html">setActionButtonsEnableStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setActionButtonsEnableStatus</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$setActionButtonsEnableStatus(kotlin.Boolean)/status">status</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-first-time.html">setFirstTime</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setFirstTime</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$setFirstTime(kotlin.Int)/firsttime">firsttime</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-spots.html">setSpots</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSpots</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$setSpots(kotlin.collections.List((com.twango.me.Model.TodaySpecialTable)), kotlin.Int)/spot">spot</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.twango.me.-model/-today-special-table/index.html"><span class="identifier">TodaySpecialTable</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$setSpots(kotlin.collections.List((com.twango.me.Model.TodaySpecialTable)), kotlin.Int)/creditCount">creditCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="share-audio-instance.html">shareAudioInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">shareAudioInstance</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$shareAudioInstance(android.media.MediaPlayer)/player">player</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/media/MediaPlayer.html"><span class="identifier">MediaPlayer</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="show-free-animation.html">showFreeAnimation</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">showFreeAnimation</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Adapter.CardStackAdapter$showFreeAnimation(androidx.core.widget.NestedScrollView)/view">view</span><span class="symbol">:</span>&nbsp;<span class="identifier">NestedScrollView</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="show-matchmaker-popup.html">showMatchmakerPopup</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">showMatchmakerPopup</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="show-payment-plans.html">showPaymentPlans</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">showPaymentPlans</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

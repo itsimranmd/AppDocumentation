@@ -1,0 +1,296 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Today_Profile_Fragment - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Fragment</a>&nbsp;/&nbsp;<a href="./index.html">Today_Profile_Fragment</a><br/>
+<br/>
+<h1>Today_Profile_Fragment</h1>
+<code><span class="keyword">class </span><span class="identifier">Today_Profile_Fragment</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-base_-fragment/index.html"><span class="identifier">Base_Fragment</span></a><span class="symbol">, </span><span class="identifier">CardStackListener</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Today_Profile_Fragment</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$<init>(com.twango.me.Interfaces.CountInterface, com.twango.me.Interfaces.ChangeMainFragments, android.widget.RelativeLayout, com.twango.me.Interfaces.StartPayment)/updateCount">updateCount</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-interfaces/-count-interface/index.html"><span class="identifier">CountInterface</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$<init>(com.twango.me.Interfaces.CountInterface, com.twango.me.Interfaces.ChangeMainFragments, android.widget.RelativeLayout, com.twango.me.Interfaces.StartPayment)/changeStage">changeStage</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-interfaces/-change-main-fragments/index.html"><span class="identifier">ChangeMainFragments</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$<init>(com.twango.me.Interfaces.CountInterface, com.twango.me.Interfaces.ChangeMainFragments, android.widget.RelativeLayout, com.twango.me.Interfaces.StartPayment)/rootLay">rootLay</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$<init>(com.twango.me.Interfaces.CountInterface, com.twango.me.Interfaces.ChangeMainFragments, android.widget.RelativeLayout, com.twango.me.Interfaces.StartPayment)/razorPay">razorPay</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-interfaces/-start-payment/index.html"><span class="identifier">StartPayment</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-a-g.html">TAG</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">TAG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="carousel-link.html">carouselLink</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">carouselLink</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="code.html">code</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">code</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="count-show-plans.html">countShowPlans</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">countShowPlans</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="credit-count.html">creditCount</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">creditCount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-user-carousel.html">currentUserCarousel</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUserCarousel</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-user-photo.html">currentUserPhoto</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUserPhoto</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-user-response.html">currentUserResponse</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUserResponse</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-username.html">currentUsername</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentUsername</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="popupcount.html">popupcount</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">popupcount</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="popupcount-reject.html">popupcountReject</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">popupcountReject</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="root-lay.html">rootLay</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">rootLay</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/RelativeLayout.html"><span class="identifier">RelativeLayout</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="type.html">type</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-credits.html">addCredits</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addCredits</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>api called to credits/free profile for the user if they have
+rated us on play store <a href="#">R.layout.dialog_free_user_rateus</a>
+we show the rating dialog when user has exhausted all the profiles for the day
+and they have not yet rated us <a href="../../com.twango.me.-model/-api-today-special/is_rated.html">ApiTodaySpecial.is_rated</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="check-credit.html">checkCredit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkCredit</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$checkCredit(kotlin.String, kotlin.Int)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$checkCredit(kotlin.String, kotlin.Int)/first_time_value">first_time_value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>api call to check the current credit status of the user.
+response is or <a href="../../com.twango.me.-model/-api-credit/index.html">ApiCredit</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="check-profile-completion-percent-and-show-message.html">checkProfileCompletionPercentAndShowMessage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">checkProfileCompletionPercentAndShowMessage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>this function is used to calculate the completion percentage of the user profile
+percentage is calculated using a Global method <a href="#">getProfileCompletionPercentage</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/resultCode">resultCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/data">data</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Intent.html"><span class="identifier">Intent</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-attach.html">onAttach</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onAttach</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onAttach(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>These are all the required instances of the interfaces needed.
+<a href="../../com.twango.me.-interfaces/-credits-interface/index.html">CreditsInterface</a> -&gt; for credit related values both setter and getter
+<a href="../../com.twango.me.-interfaces/-start-payment/index.html">StartPayment</a> -&gt; for starting the payments for both razorpay and paytm and updating the auth
+<a href="../../com.twango.me.-interfaces/-count-interface/index.html">CountInterface</a> -&gt; for count related values both setter and getter
+<a href="../../com.twango.me.-interfaces/-change-main-fragments/index.html">ChangeMainFragments</a> -&gt; for changing fragments in the <a href="../../com.twango.me.-interfaces/-drawer-interface/index.html">ChatDisplayActivity</a> -&gt; for controlling drawer in <a href="../../com.twango.me.-acitivity/-chat-display-activity/index.html">ChatDisplayActivity</a> from fragments
+<a href="../../com.twango.me.-interfaces/-user-profile-interface/index.html">UserProfileInterface</a> -&gt; for controlling user profile related values both setter and getter</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-back-pressed.html">onBackPressed</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBackPressed</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-appeared.html">onCardAppeared</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardAppeared</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardAppeared(android.view.View, kotlin.Int)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardAppeared(android.view.View, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-canceled.html">onCardCanceled</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardCanceled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-disappeared.html">onCardDisappeared</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardDisappeared</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardDisappeared(android.view.View, kotlin.Int)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardDisappeared(android.view.View, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-dragging.html">onCardDragging</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardDragging</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardDragging(com.yuyakaido.android.cardstackview.Direction, kotlin.Float)/direction">direction</span><span class="symbol">:</span>&nbsp;<span class="identifier">Direction</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardDragging(com.yuyakaido.android.cardstackview.Direction, kotlin.Float)/ratio">ratio</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-rewound.html">onCardRewound</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardRewound</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-card-swiped.html">onCardSwiped</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCardSwiped</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCardSwiped(com.yuyakaido.android.cardstackview.Direction)/direction">direction</span><span class="symbol">:</span>&nbsp;<span class="identifier">Direction</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>abstract function of the cardview
+called whenever the card is swiped
+either left or right.
+if swiped left it will call <a href="#">Direction.Left</a>
+if swiped right it will call <a href="#">Direction.RIGHT</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view.html">onCreateView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateView</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/inflater">inflater</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/LayoutInflater.html"><span class="identifier">LayoutInflater</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/container">container</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-destroy-view.html">onDestroyView</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onDestroyView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-pause.html">onPause</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPause</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If intro audio is being played and user visits another section or he just send the app to background
+we have to stop and release the media player so that it doesnt keep audio file running in the background.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-resume.html">onResume</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onResume</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-view-created.html">onViewCreated</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onViewCreated</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onViewCreated(android.view.View, android.os.Bundle)/view">view</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/View.html"><span class="identifier">View</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$onViewCreated(android.view.View, android.os.Bundle)/savedInstanceState">savedInstanceState</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-auth-data.html">updateAuthData</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateAuthData</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Fragment.Today_Profile_Fragment$updateAuthData(kotlin.Boolean)/updateStack">updateStack</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Api call to update the current users authentication data that
+was fetched during the login of the user.
+<a href="../../com.twango.me.-model/-api-auth/index.html">HomeApis.LOGIN</a>
+<a href="../../com.twango.me.-helper/-preference-manager/get-auth-credentials.html">PreferenceManager.saveAuthCredentials</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="new-instance.html">newInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">newInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Today_Profile_Fragment</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

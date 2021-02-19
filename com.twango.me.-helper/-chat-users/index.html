@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ChatUsers - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Helper</a>&nbsp;/&nbsp;<a href="./index.html">ChatUsers</a><br/>
+<br/>
+<h1>ChatUsers</h1>
+<code><span class="keyword">class </span><span class="identifier">ChatUsers</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ChatUsers</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="create-new-user.html">createNewUser</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createNewUser</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.ChatUsers$createNewUser(com.twango.me.Model.ChatRoomTable, com.twango.me.Model.ChatRoomTable, kotlin.String)/fromUser">fromUser</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-model/-chat-room-table/index.html"><span class="identifier">ChatRoomTable</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.ChatUsers$createNewUser(com.twango.me.Model.ChatRoomTable, com.twango.me.Model.ChatRoomTable, kotlin.String)/toUser">toUser</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-model/-chat-room-table/index.html"><span class="identifier">ChatRoomTable</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.ChatUsers$createNewUser(com.twango.me.Model.ChatRoomTable, com.twango.me.Model.ChatRoomTable, kotlin.String)/firstAudio">firstAudio</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-ref.html">getUserRef</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserRef</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.ChatUsers$getUserRef(kotlin.String)/fromUserId">fromUserId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Task</span><span class="symbol">&lt;</span><span class="identifier">DocumentSnapshot</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="listen-to-message-changes-in-database.html">listenToMessageChangesInDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listenToMessageChangesInDatabase</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.ChatUsers$listenToMessageChangesInDatabase(android.content.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.ChatUsers$listenToMessageChangesInDatabase(android.content.Context, kotlin.String)/fromUserId">fromUserId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="listen-to-user-changes-in-database.html">listenToUserChangesInDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">listenToUserChangesInDatabase</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Helper.ChatUsers$listenToUserChangesInDatabase(kotlin.String, android.widget.TextView, kotlin.String)/fromUserId">fromUserId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.ChatUsers$listenToUserChangesInDatabase(kotlin.String, android.widget.TextView, kotlin.String)/textView">textView</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/TextView.html"><span class="identifier">TextView</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.twango.me.Helper.ChatUsers$listenToUserChangesInDatabase(kotlin.String, android.widget.TextView, kotlin.String)/fcmId">fcmId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="remove-snapshot-listeners.html">removeSnapshotListeners</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">removeSnapshotListeners</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

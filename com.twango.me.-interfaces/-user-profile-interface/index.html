@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>UserProfileInterface - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.twango.me.Interfaces</a>&nbsp;/&nbsp;<a href="./index.html">UserProfileInterface</a><br/>
+<br/>
+<h1>UserProfileInterface</h1>
+<code><span class="keyword">interface </span><span class="identifier">UserProfileInterface</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-profile-completion-percentage.html">getProfileCompletionPercentage</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getProfileCompletionPercentage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-rating-status.html">getRatingStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getRatingStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-user-profile.html">getUserProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getUserProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.twango.me.-model/-api-my-profile/index.html"><span class="identifier">ApiMyProfile</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-rating-status.html">setRatingStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setRatingStatus</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Interfaces.UserProfileInterface$setRatingStatus(kotlin.Int)/rated">rated</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-user-profile.html">setUserProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setUserProfile</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Interfaces.UserProfileInterface$setUserProfile(com.twango.me.Model.ApiMyProfile)/profile">profile</span><span class="symbol">:</span>&nbsp;<a href="../../com.twango.me.-model/-api-my-profile/index.html"><span class="identifier">ApiMyProfile</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="set-user-profile-picture.html">setUserProfilePicture</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">setUserProfilePicture</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-completion-percentage.html">updateCompletionPercentage</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">updateCompletionPercentage</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Interfaces.UserProfileInterface$updateCompletionPercentage(kotlin.Int)/percentageComplete">percentageComplete</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-user-profile.html">updateUserProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">updateUserProfile</span><span class="symbol">(</span><span class="identifier" id="com.twango.me.Interfaces.UserProfileInterface$updateUserProfile(kotlin.Boolean)/updateAuth">updateAuth</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../com.twango.me.-acitivity/-chat-display-activity/index.html">ChatDisplayActivity</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ChatDisplayActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AppCompatActivity</span><span class="symbol">, </span><a href="../-credits-interface/index.html"><span class="identifier">CreditsInterface</span></a><span class="symbol">, </span><span class="identifier">PaymentResultListener</span><span class="symbol">, </span><a href="../-start-payment/index.html"><span class="identifier">StartPayment</span></a><span class="symbol">, </span><a href="../-drawer-interface/index.html"><span class="identifier">DrawerInterface</span></a><span class="symbol">, </span><a href="./index.html"><span class="identifier">UserProfileInterface</span></a><span class="symbol">, </span><a href="../-count-interface/index.html"><span class="identifier">CountInterface</span></a><span class="symbol">, </span><a href="../-change-main-fragments/index.html"><span class="identifier">ChangeMainFragments</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
